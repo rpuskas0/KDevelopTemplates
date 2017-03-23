@@ -1,0 +1,6 @@
+[General]
+Name=C++/FLTK with Stroustrup's GUI libs
+Comment=A project set up for C++ and FLTK including B. Stroustrup's "Graphics and GUI interface library". This template is intended for beginners learning from Stroustrup's "Programming: Principles and Practice Using C++"
+Category=FLTK/Beginner's Project
+ShowFilesAfterGeneration=%{PROJECTDIR}/main.cpp
+ValidProjectName=^[a-zA-Z_][a-zA-Z0-9_]+$

@@ -1,0 +1,11 @@
+## "C++/FLTK with Stroustrup's GUI libs" KDevelop template by
+RPuskas ##
+
+This C++/FLTK template is intended for beginners going through
+Stroustrup's "Progamming: Principles and Practice Using C++".
+The contents of the GUI folder is entirely B. Stroustrup's work
+(except for some minor bugfixes), all the sources and headers are
+included only for convenience.
+
+
+

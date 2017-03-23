@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.1)
+project(%{APPNAMELC})
+
+set (CMAKE_CXX_STANDARD 11)
+
+FIND_PACKAGE ( FLTK )
+IF ( FLTK_FOUND )
+    INCLUDE_DIRECTORIES( ${FLTK_INCLUDE_DIR} )
+    LINK_DIRECTORIES(${FLTK_LIBRARY_DIR} )
+ENDIF ( FLTK_FOUND )
+
+add_executable( %{APPNAMELC} main.cpp GUI/Graph.cpp GUI/Window.cpp GUI/GUI.cpp GUI/Simple_window.cpp  )
+
+TARGET_LINK_LIBRARIES (%{APPNAMELC} ${FLTK_LIBRARIES} )
+
+install(TARGETS %{APPNAMELC} RUNTIME DESTINATION bin)
